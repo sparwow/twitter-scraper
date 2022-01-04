@@ -1,5 +1,5 @@
-# import Twitter_scraper
-import Twitter_scraper
+# import TwitterScraper
+import TwitterScraper
 
 # Tweets from these accounts
 from_users = ['CNN', 'FoxNews', 'ABC', 'BBCWorld', 'TIME', 'CBSNews', 'NBCNews', 'MSNBC','nytimes','washingtonpost']
@@ -9,7 +9,7 @@ from_users = ['CNN', 'FoxNews', 'ABC', 'BBCWorld', 'TIME', 'CBSNews', 'NBCNews',
 # lang="language code"
 # you can find language code on this link https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
 
-scraper = Twitter_scraper(max_results=10**2, until="2020-01-01", since="2019-01-01", lang="en", from_users=from_users, with_replies=False)
+scraper = TwitterScraper(max_results=10**2, until="2020-01-01", since="2019-01-01", lang="en", from_users=from_users, with_replies=False)
 
 # Test
 result = scraper.basic_mode()
